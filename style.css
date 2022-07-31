@@ -1,0 +1,114 @@
+/*
+ * Variáveis
+ * =========
+ */
+
+:root {
+  --color-primary: hsl(16, 100%, 50%);
+  --color-primary-light: hsl(16, 100%, 75%);
+
+  --color-primary-bg: hsl(16, 100%, 58%);
+  --color-primary-bg-hover: var(--color-primary);
+  --color-primary-fg: hsl(0, 0%, 100%);
+}
+
+/*
+ * Estilos base
+ * ============
+ */
+
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #DAE0E6;
+  margin: 0;
+}
+
+.card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+/* Formulários */
+
+/* input, button {
+  display: block;
+} */
+
+.input {
+  border: 1px solid #C4C4C4;
+  border-radius: 8px;
+  padding: 12px 10px;
+  width: 100%;
+  margin-bottom: 22px;
+  transition: border-color ease .2s;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid var(--color-primary);
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 100px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background-color ease .2s;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary-fg);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+}
+
+.btn-secondary {
+  border: 1px solid var(--color-primary-bg);
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-bg-hover);
+  color: var(--color-primary-fg);
+}
+
+/*
+ * TELAS
+ * =====
+*/
+
+/* Login */
+
+.page-auth {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-auth {
+  padding: 28px;
+  width: 100%;
+  max-width: 400px;
+}
