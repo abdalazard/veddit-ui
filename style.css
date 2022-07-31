@@ -17,7 +17,8 @@
  * ============
  */
 
- * {
+/* Elementos */
+* {
   box-sizing: border-box;
 }
 
@@ -25,6 +26,48 @@ body {
   font-family: 'Nunito', sans-serif;
   background-color: #DAE0E6;
   margin: 0;
+}
+
+a {
+  color: var(--color-primary-bg);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary-bg-hover);
+  text-decoration: none;
+}
+
+
+/* Texto */
+.text-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+.text-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.text-base {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.text-xl {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.text-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
 }
 
 .card {
@@ -70,6 +113,7 @@ body {
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
+  text-align: center;
   transition: background-color ease .2s;
 }
 
@@ -103,7 +147,6 @@ body {
 .page-auth {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -111,4 +154,5 @@ body {
   padding: 28px;
   width: 100%;
   max-width: 400px;
+  margin: auto 0;
 }
